@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hernán">
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Consultas o comentarios</title>
+  </head>
+
+  <body>
+    <header>
+     <section class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="catalogo.html">JUEGOS</a></li>
+        <li><a href="formulario_reg.html">REGISTRO</a></li>
+        <li><a href="formulario_com.html">COMENTARIOS</a></li>
+      </ul>
+     </section>
+    </header>
+
+    <h1>Consultas o comentarios</h1>
+    <h2>Los campos que contengan * son obligatorios.</h2>
+
+    <form action="url" method="get">
+     <div>
+       <label for="mail">E-mail*:</label>
+       <input type="email" id="mail" name="mail_usuario" required />
+     </div>
+
+     <div>
+       <label for="name">Nombre:</label>
+       <input type="text" id="name" name="nombre_usuario" />
+     </div>
+
+     <div>
+       <label for="msg">Mensaje*:</label>
+       <textarea id="msg" name="mensaje_usuario" maxlength="240" required></textarea>
+     </div>
+
+     <div class="button">
+       <button type="submit">Enviar!</button>
+     </div>
+    </form>
+
+  </body>
+  </html>

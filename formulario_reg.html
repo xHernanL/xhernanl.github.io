@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Hernán">
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Registro</title>
+  </head>
+
+  <body>
+    <header>
+     <section class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="catalogo.html">JUEGOS</a></li>
+        <li><a href="formulario_reg.html">REGISTRO</a></li>
+        <li><a href="formulario_com.html">COMENTARIOS</a></li>
+      </ul>
+     </section>
+    </header>
+
+    <h1>Registro</h1>
+    <h2>Los campos que contengan * son obligatorios.</h2>
+
+    <form action="url" method="get">
+     <div>
+       <label for="name">Nombre*:</label>
+       <input type="text" id="name" name="nombre_usuario" maxlength="30" required />
+     </div>
+
+     <div>
+       <label for="apellido">Apellido*:</label>
+       <input type="text" id="apellido" name="apellido_usuario" maxlength="30" required />
+     </div>
+
+     <div>
+       <label for="mail">E-mail*:</label>
+       <input type="email" id="mail" name="mail_usuario" required />
+     </div>
+
+     <div>
+       <label for="contrasena">Contraseña*:</label>
+       <input type="password" id="contrasena" name="contrasena_usuario" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="La contraseña debe de contar con al menos una mayúscula, minúscula y al menos un número, 8 a 24 caracteres" required />
+     </div>
+
+     <div>
+       <label for="rep_contrasena">Repetir contraseña*:</label>
+       <input type="password" id="rep_contrasena" name="contrasena_usuario" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" title="La contraseña debe de contar con al menos una mayúscula, minúscula y al menos un número, 8 a 24 caracteres"  required />
+     </div>
+
+     <div class="button">
+       <button type="submit">Registarse!</button>
+     </div>
+    </form>
+
+  </body>
+
+  </html>

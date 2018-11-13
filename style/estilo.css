@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto.ttf")
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+h1 {
+  font-family: Roboto;
+  color: white;
+  padding: 60px 0 0 0;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+/* Formulario*/
+form {
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+form label {
+  font-family: Roboto;
+  display: inline-block;
+  width: 150px;
+}
+
+form input {
+  font-family: Roboto;
+  display: inline-block;
+  width: 200px;
+  margin-left: 1px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  font-family: Roboto;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Menú nuevo*/
+header {
+  width: 100%;
+  height: 50px;
+  box-shadow: 1px 1px 5px #000;
+  position: fixed;
+  background: black;
+  text-align: center;
+  z-index: 1;
+}
+
+.menu {
+  width: 100%;
+  padding-top: 13px;
+  margin: auto;
+}
+
+.menu ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  padding: 13px 20px 19px 20px;
+}
+
+.menu ul a:hover {
+  color: #f2f2f2;
+  background: #6e6e6e;
+}
+
+.contenedor {
+  overflow: hidden;
+}
+
+.izq {
+  float:left;
+  width: 30%;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.der {
+  font-family: "Roboto",sans-serif;
+  float:left;
+  width: 56%;
+  text-align: center;
+  margin-top: 120px;
+  margin-left: 60px;
+}
+
+.galeria {
+  text-align: center;
+}
+
+.games {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.games ul {
+  padding-left: 0;
+  font-size: 0;
+}
+
+.games ul li {
+  text-decoration: none;
+  list-style-type: none;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  box-sizing:border-box;
+  padding: 10px;
+}
+
+.games ul li img {
+  width: 100%;
+}
+
+ul li h1 {
+  font-size: 32px;
+  padding-top: 1px;
+}
+
+/*Layout tablets*/
+@media screen and (min-width:500px) and (max-width:800px){
+.games ul li {
+  width: 50%;
+}
+
+.menu ul li {
+  text-align: center;
+}
+}
+
+/*Layout celulares*/
+@media screen and (max-width:499px){
+.games ul li {
+  width: 100%;
+}
+
+h1 {
+  padding: 120px 0 0 0;
+}
+
+header {
+  height: 100px;
+}
+
+.menu ul a {
+  padding: 3px 3px 3px 3px;
+}
+
+.menu ul li {
+  display: block;
+  text-align: center;
+}
+.games {
+  padding-top: 120px;
+}
+}

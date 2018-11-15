@@ -7,16 +7,14 @@ document.addEventListener("DOMContentLoaded", function(){
     var campoCantidad = document.getElementById("cantidad");
     var encabezadoSubtotal = document.getElementById("subtotal");
     var encabezadoTotal = document.getElementById("total");
-
     var envioComun = document.getElementById("comun");
     var envioEspecial = document.getElementById("especial")
     var envioPremium = document.getElementById("premium");
     var totalEnvio = document.getElementById("total-envio");
-
     var divOtorgado = document.getElementById("division-otorgado");
-
     var radioDigital = document.getElementById("digital");
     var radioFisico = document.getElementById("fisico");
+
     radioDigital.addEventListener("change", function(){
         divOtorgado.style.display = "none";
     });
@@ -39,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
-      precioTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
+      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
 
     });
 
@@ -48,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
+      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
 
     });
 
@@ -57,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
-
+      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
     });
 });

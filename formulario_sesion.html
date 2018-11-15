@@ -1,14 +1,11 @@
 <!DOCTYPE html>
   <html>
-
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Hernán">
     <link rel="stylesheet" href="style/estilo.css">
-    <script src="js/script.js"></script>
-    <script src="js/juegos.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <title>Juegos</title>
+    <title>Home</title>
   </head>
 
   <body>
@@ -23,14 +20,24 @@
      </section>
     </header>
 
-  <div class="games">
-    <ul id="listajuegos">
-    </ul>
-  </div>
+    <h1>¡Bienvenidos a World Games!</h1>
+    <form action="url" method="get">
 
-  <div class="footer">
-    <p>World Games - Hernán López</p>
-  </div>
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="mail_usuario"/>
+      </div>
 
+     <div>
+       <label for="contrasena">Contraseña:</label>
+       <input type="password" id="contrasena" name="contrasena_usuario"/>
+     </div>
+
+     <div class="button">
+       <button type="button">Iniciar sesión!</button>
+     </div>
+     <div class="footer">
+       <p>World Games - Hernán López</p>
+     </div>
   </body>
   </html>

@@ -37,6 +37,22 @@ form {
   font-family: Roboto;
   text-align: center;
   padding-top: 20px;
+  float: center;
+}
+#cantidad {
+  margin: 0px 45px 10px 15px;
+}
+
+#metodo_pago {
+  margin: 1px 0px 4px 5px;
+}
+
+#nombre {
+  margin: 0px 0px 0px 0px;
+}
+
+#mail {
+  margin: 0px 0px 0px 0px;
 }
 /* Menú nuevo*/
 header {

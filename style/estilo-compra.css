@@ -115,3 +115,41 @@ button {
   display: inline-block;
   font-size: 16px;
 }
+
+/*Layout tablets*/
+@media screen and (min-width:500px) and (max-width:800px){
+.games ul li {
+  width: 50%;
+}
+
+.menu ul li {
+  text-align: center;
+}
+}
+
+/*Layout celulares*/
+@media screen and (max-width:499px){
+.games ul li {
+  width: 100%;
+}
+
+h1 {
+  padding: 120px 0 0 0;
+}
+
+header {
+  height: 100px;
+}
+
+.menu ul a {
+  padding: 3px 3px 3px 3px;
+}
+
+.menu ul li {
+  display: block;
+  text-align: center;
+}
+.games {
+  padding-top: 120px;
+}
+}

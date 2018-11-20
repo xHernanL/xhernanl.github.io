@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var precio = 40;
     var costoEnvio = 0;
     var subtotal = 0;
+    var num;
 
     var campoCantidad = document.getElementById("cantidad");
     var encabezadoSubtotal = document.getElementById("subtotal");
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
       subtotal = cantidad * precio;
       encabezadoSubtotal.innerHTML = subtotal;
-      encabezadoTotal.innerHTML = subtotal * 1.22;
+      num = subtotal * 1.22;
+      encabezadoTotal.innerHTML = num.toFixed(2);
     });
 
     envioComun.addEventListener("change", function () {
@@ -37,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
-      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
-
+      num = (costoEnvio + subtotal) * 1.22;
+      encabezadoTotal.innerHTML = num.toFixed(2);
     });
 
     envioEspecial.addEventListener("change", function () {
@@ -46,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
-      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
+      num = (costoEnvio + subtotal) * 1.22;
+      encabezadoTotal.innerHTML = num.toFixed(2);
     });
 
 
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
       totalEnvio.innerHTML = costoEnvio;
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
-      encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
+      num = (costoEnvio + subtotal) * 1.22;
+      encabezadoTotal.innerHTML = num.toFixed(2);
     });
 });

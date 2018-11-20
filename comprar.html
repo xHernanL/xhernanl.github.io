@@ -25,15 +25,15 @@
       <h4>Costo del juego USD40<h4>
       <div>
 
-      <form>
+      <form action="url" method="get">
         <div>
           <label for="cantidad">Cantidad de ítems a comprar*: </label>
-          <input id="cantidad" type="number" min="0" name="items_usuario">
+          <input id="cantidad" type="number" min="0" value="0" name="items_usuario" required>
         </div>
 
         <div>
           <label for="metodo_pago">Medio de pago*:</label>
-          <select id="metodo_pago" name="metodo_usuario">
+          <select id="metodo_pago" name="metodo_usuario" required>
             <option value="paypal">PayPal</option>
             <option value="mastercard">Mastercard</option>
             <option value="debito">Débito bancario</option>
@@ -42,12 +42,12 @@
 
         <div>
           <label for="nombre">Nombre*:</label>
-          <input id="nombre" type="text" name="name_usuario">
+          <input id="nombre" type="text" name="name_usuario" required>
         </div>
 
         <div>
           <label for="mail">E-mail*:</label>
-          <input id="mail" type="email" name="mail_usuario">
+          <input id="mail" type="email" name="mail_usuario" required>
         </div>
 
         <div class="Format">

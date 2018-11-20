@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
       encabezadoSubtotal.innerHTML = subtotal + costoEnvio;
       encabezadoTotal.innerHTML = (costoEnvio + subtotal) * 1.22;
-
     });
 
 

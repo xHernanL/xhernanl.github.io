@@ -20,6 +20,7 @@ h1 {
 }
 
 h2 {
+  font-family: Roboto;
   color: white;
   text-align: center;
 }
@@ -31,6 +32,7 @@ h3 {
 h4 {
   font-family: Roboto;
   text-align: center;
+  margin-top: 5px;
 }
 
 form {
@@ -41,29 +43,44 @@ form {
 }
 
 label {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #cantidad {
-  margin: 0px 45px 10px 15px;
+  margin: 20px 50px 20px 15px;
+}
+
+#metodo {
+  margin: 14px 14px 10px 14px;
 }
 
 #metodo_pago {
-  margin: 1px 1px 4px 5px;
+  margin: 0px 2px 15px 17px;
 }
 
 #nombre {
-  margin: 4px -90px 6px 10px;
+  margin: 10px -100px 15px 13px;
 }
 
 #mail {
-  margin: 4px -94px 8px 16px;
+  margin: 10px -105px 20px 16px;
 }
 
 #direccion {
-  margin: 8px -80px 8px 10px;
+  margin: 15px -80px 15px 10px;
 }
 
+#format {
+  margin: 0px 105px 0px 0px;
+}
+
+#digital {
+  margin: 15px 0px 20px -100px;
+}
+
+#metod {
+  margin: 0px 0px 0px 0px;
+}
 /* Menú nuevo*/
 header {
   width: 100%;

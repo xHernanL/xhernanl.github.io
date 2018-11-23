@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
   radioDigital.addEventListener("change", function(){
     divOtorgado.style.display = "none";
+    costoEnvio = 0;
+    encabezadoSubtotal.innerHTML = subtotal;
+    num = subtotal * 1.22;
+    encabezadoTotal.innerHTML = num.toFixed(2);
   });
 
   radioFisico.addEventListener("change", function(){

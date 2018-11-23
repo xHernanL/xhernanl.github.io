@@ -40,6 +40,10 @@ form {
   float: center;
 }
 
+label {
+  font-size: 16px;
+}
+
 #cantidad {
   margin: 0px 45px 10px 15px;
 }

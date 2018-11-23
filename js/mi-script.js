@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", function(){
   var divOtorgado = document.getElementById("division-otorgado");
   var radioDigital = document.getElementById("digital");
   var radioFisico = document.getElementById("fisico");
+  var reseteoJ = document.getElementById("reseteo");
+
+  reseteoJ.addEventListener("click", function(){
+    encabezadoTotal.innerHTML = 0;
+    encabezadoSubtotal.innerHTML = 0;
+    envioComun.innerHTML = 0;
+    envioEspecial.innerHTML = 0;
+    envioPremium.innerHTML = 0;
+    totalEnvio.innerHTML = 0;
+    subtotal.innerHTML = 0;
+  });
 
   radioDigital.addEventListener("change", function(){
     divOtorgado.style.display = "none";
